@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt</title>
+    <style>
+        body {
+            background-color: white;
+            color: white;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid white;
+            padding: 20px 35%;
+            border-radius: 5px;
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif ;
+            font-size: large;
+            line-height: 30px;
+        }
+        img {
+            width: 300px;
+        }
+        .contain {
+            height: 100vh;
+            width: 80%;
+            margin: auto;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(143, 95, 187);
+            border-radius: 8px;
+            padding: 15px;
+            width: 70%;
+            margin: auto;
+        }
+        .image {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            width: 90%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent {
+            padding: 15px 0px;
+        }
+        .parent a {
+             text-align: left;
+        }
+        .btn {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: blueviolet;
+            border-radius: 5px;
+            color: white;
+            box-shadow:rgb(195, 192, 197);
+            transition: all 200ms ease-in-out;
+            width: 80%;
+        }
+    </style>  
+        
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="content">
+    <h1>Greek Yogurt</h1>
+     <h2>An Origin Story</h2>
+     <div class="image">
+         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/464/original/greek.jpeg?1683225983">
+     </div>
+    <p> <strong>Records of yogurt</strong> in Greece begin in the 5th century BCE with the writings of Herodotus, but in reality, <br>
+        the process of straining yogurt (making it “Greek”) began somewhere in the Middle East. <br>
+        In Greece, this strained yogurt is called straggisto, and is often used to make dips (think tzatziki), <br>
+        to spread on flat bread eaten with olives, pickles, olive oil, usually veggies (we usually go with onions, cucumbers, and tomatoes),
+        <br>and often with cheese (doesn’t get betta than feta!). Bonus points for adding some fresh herbs or dried spice blends like za’atar.
+        <br> You can just as easily, and just as deliciously, put your yogurt on bread and drizzle honey on it instead for a sweeter breakfast treat! <br>
+        <span class="parent">
+     <a href="https://positivelyprobiotic.com/the-bacteria-blog/greek-yogurt-a-story#:~:text=Records%20of%20yogurt%20in%20Greece,somewhere%20in%20the%20Middle%20East." target="_blank">Read on wikipedia</a> <br>
+    </span>
+    </p>
+    <button class="btn">TRY GREEK YOGURT</button>
+    </div>
+</div>
+<script>
+    let contactButton = document.querySelector(".btn");
+    contactButton.addEventListener("click",tryGreek);
+    function tryGreek() {
+        let name = prompt("What is your name?"); 
+        console.log(name);
+        if (name==="") {
+             alert(
+            "No name , no Greek Yorgurt for you!"
+            )
+        }else {
+            alert(
+            "Thanks " + name + " " + "," + " we will be in touch " + "." + " Meanwhile, have a lot of Yogurt!"
+          )
+        }
+    }
+</script>
+</body>
+</html>
